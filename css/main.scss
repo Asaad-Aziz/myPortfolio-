@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", arial
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+
+.top-bar, .bottom-bar {
+    background-color: #8E82D8;
+
+    a {
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo{
+        color:#F1ECA4;
+        font-weight: bold;
+        
+    }
+    ul {
+        display: flex;
+
+        a{
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+
+.social-top, .hero-design {
+    display: none;
+}
+
+.hero {
+    background-color: black;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 6em;
+}
+
+.meet {
+    margin: 0 auto;
+    width: 200px;
+    color: #B896FC;
+}
+
+.scroll {
+    width: 30px;
+    margin-top: 2em;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured {
+    position: relative;
+}
+
+.featured::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #c9c3f0c4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a67cfa;
+    letter-spacing: .2em;
+    font-size: .85em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+
+.featured-desc {
+    color: rgb(0, 0, 0);
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 500;
+    
+}
+
+.skills {
+    background: #F1ECA4;
+}
+
+.skills-container {
+
+    background: rgb(241, 236, 227);
+    padding: 5em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    
+    .skills-title {
+        background-color: #8E82D8 ;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+    
+    .featured{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+
+}
